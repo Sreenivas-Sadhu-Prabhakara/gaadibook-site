@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>GaadiBook — Never miss a renewal again</title>
+<meta name="description" content="One expiry calendar for every vehicle document — insurance, PUC, fitness, permit, road tax, DL. Staged reminders before the fine. Rs 299/mo." />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="top">
+  <a class="nav__brand" href="#top" aria-label="GaadiBook home">
+    <span class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 13l2-5a2 2 0 0 1 1.9-1.4h10.2A2 2 0 0 1 19 8l2 5"/>
+        <path d="M3 13h18v4a1 1 0 0 1-1 1h-1"/>
+        <path d="M6 18H4a1 1 0 0 1-1-1v-4"/>
+        <circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/>
+      </svg>
+    </span>
+    <span class="nav__name">Gaadi<em>Book</em></span>
+  </a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#problem">Problem</a>
+    <a href="#how">How it works</a>
+    <a href="#features">Features</a>
+    <a href="#preview">Preview</a>
+    <a href="#pricing">Pricing</a>
+  </nav>
+  <a href="#pricing" class="btn btn--sm">Start free</a>
+</header>
+
+<main>
+
+<!-- ===== 1. HERO ===== -->
+<section class="hero">
+  <div class="hero__grid">
+    <div class="hero__copy">
+      <span class="eyebrow">Vehicle compliance, on autopilot</span>
+      <h1>Never miss a<br><span class="hl">renewal</span> again.</h1>
+      <p class="lede">
+        Insurance, PUC, fitness, permit, road tax, DL — one lapse means a
+        challan or an impound. GaadiBook puts every document on a single
+        expiry calendar and warns you before the date, not after the fine.
+      </p>
+      <div class="hero__cta">
+        <a href="#pricing" class="btn">Put my vehicles on one calendar</a>
+        <a href="#how" class="btn btn--ghost">See how it works</a>
+      </div>
+      <p class="hero__meta">Rs 299/mo &middot; No app-store download &middot; Reminders on WhatsApp &amp; SMS</p>
+    </div>
+
+    <!-- Hero signature: a live "next expiry" ticket -->
+    <aside class="ticket" aria-label="Next expiry alert preview">
+      <div class="ticket__head">
+        <span class="ticket__dot"></span> Next expiry
+      </div>
+      <div class="ticket__plate">HR&nbsp;26&nbsp;DK&nbsp;1234</div>
+      <div class="ticket__row">
+        <span>Document</span><strong>Insurance</strong>
+      </div>
+      <div class="ticket__row">
+        <span>Expires in</span>
+        <strong class="ticket__count"><span id="countdown">6</span> days</strong>
+      </div>
+      <div class="ticket__row">
+        <span>Cost if lapsed</span><strong class="rupee">Rs 12,400</strong>
+      </div>
+      <div class="ticket__bar" aria-hidden="true"><i style="width:82%"></i></div>
+      <div class="ticket__foot">Reminder sent T-30 &middot; T-15 &middot; T-7 &middot; <b>today</b></div>
+    </aside>
+  </div>
+
+  <ul class="hero__strip" aria-label="Documents tracked">
+    <li>Insurance</li><li>PUC</li><li>Fitness</li><li>Permit</li><li>Road&nbsp;Tax</li><li>Driving&nbsp;Licence</li>
+  </ul>
+</section>
+
+<!-- ===== 2. PROBLEM ===== -->
+<section class="section problem" id="problem">
+  <div class="section__head">
+    <span class="eyebrow">The problem</span>
+    <h2>A diary and a good memory don't scale past two vehicles.</h2>
+  </div>
+  <div class="problem__grid">
+    <article class="who">
+      <h3>Who this hurts</h3>
+      <p>The owner of three tempos in Ludhiana. The cab operator running five sedans on Ola. The auto owner in Pune who is also the driver, the accountant and the dispatcher.</p>
+      <p>You don't have a fleet department. You have a phone, a plastic folder of papers, and a due date you're trying not to forget.</p>
+    </article>
+    <ul class="breaks">
+      <li>
+        <span class="breaks__tag">WhatsApp</span>
+        The renewal reminder from your agent is buried under 400 other chats by the time it matters.
+      </li>
+      <li>
+        <span class="breaks__tag">The diary</span>
+        Six documents &times; five vehicles = 30 dates. One page, one pen, and no alarm that goes off.
+      </li>
+      <li>
+        <span class="breaks__tag">Memory</span>
+        You remember insurance because it's expensive. You forget PUC and fitness — until the checkpoint.
+      </li>
+      <li>
+        <span class="breaks__tag">The cost</span>
+        Driving without insurance: up to <b class="rupee">Rs&nbsp;4,000</b> + points. An expired-permit impound can idle the vehicle for a week.
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== 3. INSIGHT ===== -->
+<section class="insight" id="insight">
+  <div class="insight__inner">
+    <span class="eyebrow eyebrow--light">The insight</span>
+    <p class="insight__line">
+      Every vehicle document is <span class="hl">pure downside</span>.
+      Renewing on time gets you nothing. Missing it by one day gets you a
+      fine or an impound. So the only job that matters is
+      <span class="ul">not lapsing</span> — and that's a calendar problem, not a paperwork problem.
+    </p>
+    <p class="insight__sub">GaadiBook does one thing well: it makes the next lapse impossible to miss, and ranks your vehicles by what a lapse would actually cost you.</p>
+  </div>
+</section>
+
+<!-- ===== 4. HOW IT WORKS ===== -->
+<section class="section how" id="how">
+  <div class="section__head">
+    <span class="eyebrow">How it works</span>
+    <h2>Set it up once. It watches the dates for you.</h2>
+  </div>
+  <ol class="steps">
+    <li class="step">
+      <span class="step__n">1</span>
+      <h3>Add your vehicles</h3>
+      <p>Enter each number plate and the expiry date on every document. Two minutes per vehicle, and you never touch it again unless something renews.</p>
+    </li>
+    <li class="step">
+      <span class="step__n">2</span>
+      <h3>Get a risk score</h3>
+      <p>Each vehicle is scored by how soon a document lapses and how much that specific lapse costs. The riskiest gaadi rises to the top.</p>
+    </li>
+    <li class="step">
+      <span class="step__n">3</span>
+      <h3>Reminders go out</h3>
+      <p>Staged nudges at T-30, 15, 7 and 1 day — then an expired alert — land on WhatsApp and SMS. You act while there's still time.</p>
+    </li>
+    <li class="step">
+      <span class="step__n">4</span>
+      <h3>Work the list</h3>
+      <p>Open the renew-by worklist, top to bottom, most urgent first. Renew, mark done, and the vehicle drops off the danger list.</p>
+    </li>
+  </ol>
+</section>
+
+<!-- ===== 5. FEATURES ===== -->
+<section class="section features" id="features">
+  <div class="section__head">
+    <span class="eyebrow">What's inside</span>
+    <h2>Six things doing the worrying for you.</h2>
+  </div>
+  <div class="feat__grid">
+    <article class="feat">
+      <div class="feat__ico" aria-hidden="true">📅</div>
+      <h3>One expiry calendar</h3>
+      <p>Insurance, PUC, fitness, permit, road tax and DL for every vehicle on a single timeline.</p>
+    </article>
+    <article class="feat">
+      <div class="feat__ico" aria-hidden="true">⚖️</div>
+      <h3>Per-vehicle risk score</h3>
+      <p>Weights each imminent lapse by its real cost, so you know which gaadi to save first.</p>
+    </article>
+    <article class="feat">
+      <div class="feat__ico" aria-hidden="true">🔔</div>
+      <h3>Staged reminders</h3>
+      <p>T-30 / 15 / 7 / 1 and an expired alert to your outbox — early enough to actually renew.</p>
+    </article>
+    <article class="feat">
+      <div class="feat__ico" aria-hidden="true">📋</div>
+      <h3>Renew-by worklist</h3>
+      <p>A single to-do list sorted by urgency. Clear the top and you've cleared your biggest risk.</p>
+    </article>
+    <article class="feat">
+      <div class="feat__ico" aria-hidden="true">₹</div>
+      <h3>Rupee exposure</h3>
+      <p>See your total fine-and-impound exposure across the fleet as one number, in rupees.</p>
+    </article>
+    <article class="feat">
+      <div class="feat__ico" aria-hidden="true">🚦</div>
+      <h3>30-day dashboard</h3>
+      <p>Everything expiring in the next month, your highest-risk vehicle, and the money at stake.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ===== 6. PRODUCT PREVIEW ===== -->
+<section class="section preview" id="preview">
+  <div class="section__head">
+    <span class="eyebrow">Product preview</span>
+    <h2>Your whole fleet's compliance on one screen.</h2>
+  </div>
+
+  <div class="screen" role="img" aria-label="GaadiBook dashboard showing documents expiring in 30 days, highest-risk vehicle, total rupee exposure, and a renew-by worklist">
+    <div class="screen__bar">
+      <span class="screen__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="screen__url">app.gaadibook.in / dashboard</span>
+    </div>
+
+    <div class="dash">
+      <div class="dash__head">
+        <div>
+          <span class="dash__hi">Sat sri akal, Balwinder</span>
+          <span class="dash__sub">Sharma Transport &middot; 5 vehicles</span>
+        </div>
+        <span class="dash__today">Sun, 19 Jul 2026</span>
+      </div>
+
+      <!-- KPI cards -->
+      <div class="kpis">
+        <div class="kpi">
+          <span class="kpi__label">Expiring in 30 days</span>
+          <span class="kpi__val">7 <small>documents</small></span>
+        </div>
+        <div class="kpi kpi--danger">
+          <span class="kpi__label">Highest-risk vehicle</span>
+          <span class="kpi__val mono">HR&nbsp;26&nbsp;DK&nbsp;1234</span>
+        </div>
+        <div class="kpi kpi--accent">
+          <span class="kpi__label">Total exposure</span>
+          <span class="kpi__val rupee">Rs 41,900</span>
+        </div>
+      </div>
+
+      <!-- Worklist -->
+      <div class="wl">
+        <div class="wl__head">
+          <span>Renew-by worklist</span>
+          <span class="wl__sort">Sorted by urgency ▾</span>
+        </div>
+        <div class="wl__scroll">
+          <table class="wl__table">
+            <thead>
+              <tr><th>Vehicle</th><th>Owner / route</th><th>Document</th><th>Expires</th><th class="ta-r">Cost if lapsed</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mono">HR 26 DK 1234</td><td>Tempo &middot; Ludhiana–Ambala</td><td>Insurance</td>
+                <td>25 Jul</td><td class="ta-r rupee">Rs 12,400</td>
+                <td><span class="chip chip--red">6 days</span></td>
+              </tr>
+              <tr>
+                <td class="mono">MH 12 PQ 8891</td><td>Sedan &middot; Ola, Pune</td><td>Fitness</td>
+                <td>28 Jul</td><td class="ta-r rupee">Rs 9,800</td>
+                <td><span class="chip chip--red">9 days</span></td>
+              </tr>
+              <tr>
+                <td class="mono">DL 1L AB 4420</td><td>Auto &middot; Karol Bagh</td><td>Permit</td>
+                <td>03 Aug</td><td class="ta-r rupee">Rs 7,500</td>
+                <td><span class="chip chip--amber">15 days</span></td>
+              </tr>
+              <tr>
+                <td class="mono">MH 12 PQ 8891</td><td>Sedan &middot; Ola, Pune</td><td>PUC</td>
+                <td>09 Aug</td><td class="ta-r rupee">Rs 6,000</td>
+                <td><span class="chip chip--amber">21 days</span></td>
+              </tr>
+              <tr>
+                <td class="mono">KA 05 MN 7702</td><td>Cab &middot; Rajaji Nagar</td><td>Road Tax</td>
+                <td>14 Aug</td><td class="ta-r rupee">Rs 6,200</td>
+                <td><span class="chip chip--green">26 days</span></td>
+              </tr>
+              <tr>
+                <td class="mono">HR 26 DK 1234</td><td>Balwinder Singh (DL)</td><td>Driving Licence</td>
+                <td>02 Sep</td><td class="ta-r rupee">Rs 5,000</td>
+                <td><span class="chip chip--green">45 days</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="preview__note">Sample data. Real dashboards use your own vehicles, documents and dates.</p>
+</section>
+
+<!-- ===== 7. PRICING ===== -->
+<section class="section pricing" id="pricing">
+  <div class="pricing__card">
+    <div class="pricing__left">
+      <span class="eyebrow">Pricing</span>
+      <h2>One plan. One price.<br>Everything included.</h2>
+      <p class="pricing__roi">
+        A single missed insurance renewal can cost <b class="rupee">Rs 4,000+</b> in fines
+        and days of downtime. GaadiBook costs less than one challan a year —
+        and it's built to make sure you never pay one.
+      </p>
+      <ul class="ticks">
+        <li>Unlimited vehicles &amp; documents</li>
+        <li>WhatsApp + SMS staged reminders</li>
+        <li>Risk scores &amp; rupee exposure</li>
+        <li>Renew-by worklist &amp; 30-day dashboard</li>
+      </ul>
+    </div>
+    <div class="pricing__right">
+      <div class="price">
+        <span class="price__cur">Rs</span><span class="price__amt">299</span><span class="price__per">/mo</span>
+      </div>
+      <a href="#" class="btn btn--full" onclick="return false">Start 14-day free trial</a>
+      <p class="price__fine">No card needed to start. Cancel anytime.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 8. WHO IT'S FOR + FAQ ===== -->
+<section class="section audience" id="faq">
+  <div class="audience__grid">
+    <div class="who-for">
+      <span class="eyebrow">Who it's for</span>
+      <h2>Built for the two-to-ten vehicle owner.</h2>
+      <ul class="for-list">
+        <li><b>Small transporters</b> — a handful of tempos or trucks, one plastic folder of papers.</li>
+        <li><b>Cab &amp; fleet operators</b> — sedans on Ola/Uber where an expired fitness kills the ride.</li>
+        <li><b>Auto &amp; taxi owners</b> — you're the driver and the office; the permit is your livelihood.</li>
+      </ul>
+    </div>
+
+    <div class="faq">
+      <span class="eyebrow">Questions</span>
+      <details>
+        <summary>Do I need to install an app?</summary>
+        <p>No. GaadiBook works in your browser and sends reminders straight to WhatsApp and SMS. Nothing to download, nothing to update.</p>
+      </details>
+      <details>
+        <summary>Does it renew the documents for me?</summary>
+        <p>GaadiBook doesn't file renewals — it makes sure you never miss the window. It tracks every date, ranks by risk and nudges you in time to renew through your usual agent or the RTO.</p>
+      </details>
+      <details>
+        <summary>What if I have just one vehicle?</summary>
+        <p>Still worth it. Six documents on one gaadi is six chances to slip. The plan is flat at Rs 299/mo whether you track one vehicle or twenty.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== 9. FOOTER ===== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="nav__name">Gaadi<em>Book</em></span>
+      <p>Never miss a renewal again.</p>
+    </div>
+    <div class="footer__meta">
+      <a href="mailto:sreeni.nintendo@gmail.com">sreeni.nintendo@gmail.com</a>
+      <span>A KARYA studio build</span>
+    </div>
+  </div>
+  <div class="footer__base">© 2026 GaadiBook &middot; Made in India for India's roads</div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

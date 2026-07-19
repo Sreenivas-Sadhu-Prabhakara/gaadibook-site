@@ -1,0 +1,18 @@
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs / deps (not used here, but kept for hygiene)
+node_modules/
+npm-debug.log*
+*.log
+
+# Local server / build artifacts
+.cache/
+dist/
