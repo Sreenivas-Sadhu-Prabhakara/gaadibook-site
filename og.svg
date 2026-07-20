@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B1712"/>
+      <stop offset="1" stop-color="#0E0C09"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle accent glow -->
+  <circle cx="1050" cy="120" r="260" fill="#D97706" opacity="0.12"/>
+  <circle cx="120" cy="560" r="200" fill="#F7D046" opacity="0.06"/>
+
+  <!-- Accent rule at top -->
+  <rect x="0" y="0" width="1200" height="8" fill="url(#amber)"/>
+
+  <!-- Brand mark: amber number plate + reminder dot -->
+  <g transform="translate(96,92)">
+    <rect x="0" y="8" width="92" height="52" rx="10" fill="#D97706"/>
+    <rect x="0" y="8" width="92" height="52" rx="10" fill="none" stroke="#F7D046" stroke-width="4"/>
+    <path d="M14 26h64M14 34h64M14 42h44" stroke="#14110D" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="84" cy="8" r="15" fill="#F7D046" stroke="#14110D" stroke-width="4"/>
+  </g>
+
+  <!-- KARYA wordmark (top right) -->
+  <text x="1104" y="128" text-anchor="end" font-family="'Helvetica Neue',Arial,sans-serif"
+        font-size="30" font-weight="700" letter-spacing="8" fill="#B9AC97">KARYA</text>
+
+  <!-- Product name -->
+  <text x="96" y="330" font-family="'Helvetica Neue',Arial,sans-serif"
+        font-size="132" font-weight="800" letter-spacing="-3" fill="#FAF8F4">Gaadi<tspan fill="#F59E0B">Book</tspan></text>
+
+  <!-- Tagline -->
+  <text x="100" y="410" font-family="'Helvetica Neue',Arial,sans-serif"
+        font-size="52" font-weight="700" fill="#FAF8F4">Never miss a renewal again.</text>
+
+  <!-- Sub-line -->
+  <text x="100" y="470" font-family="'Helvetica Neue',Arial,sans-serif"
+        font-size="31" font-weight="400" fill="#B9AC97">One expiry calendar for every vehicle document —</text>
+  <text x="100" y="512" font-family="'Helvetica Neue',Arial,sans-serif"
+        font-size="31" font-weight="400" fill="#B9AC97">insurance, PUC, fitness, permit, road tax &amp; RC.</text>
+
+  <!-- Document chips -->
+  <g font-family="'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="600">
+    <g transform="translate(100,556)">
+      <rect x="0" y="0" width="150" height="46" rx="23" fill="#241E17" stroke="#D97706" stroke-width="1.5"/>
+      <text x="75" y="30" text-anchor="middle" fill="#F7D046">WhatsApp</text>
+    </g>
+    <g transform="translate(266,556)">
+      <rect x="0" y="0" width="90" height="46" rx="23" fill="#241E17" stroke="#D97706" stroke-width="1.5"/>
+      <text x="45" y="30" text-anchor="middle" fill="#F7D046">SMS</text>
+    </g>
+    <g transform="translate(372,556)">
+      <rect x="0" y="0" width="240" height="46" rx="23" fill="#241E17" stroke="#D97706" stroke-width="1.5"/>
+      <text x="120" y="30" text-anchor="middle" fill="#F7D046">Staged reminders</text>
+    </g>
+  </g>
+</svg>
