@@ -287,6 +287,8 @@ img,svg{max-width:100%}
 .pricing__right{background:var(--ink);color:#F4EEE2;padding:44px 38px;
   display:flex;flex-direction:column;justify-content:center;gap:16px}
 .price{display:flex;align-items:baseline;gap:4px}
+.price--discovery{flex-direction:column;align-items:flex-start;gap:6px}
+.price--discovery .price__cur{font-size:2rem;font-weight:800;letter-spacing:-.02em;line-height:1.05}
 .price__cur{font-size:1.4rem;font-weight:700;color:#E0B980}
 .price__amt{font-size:4rem;font-weight:800;letter-spacing:-.03em;line-height:1}
 .price__per{font-size:1.1rem;color:#B9AC97}

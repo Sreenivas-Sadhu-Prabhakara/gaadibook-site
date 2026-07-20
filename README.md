@@ -3,7 +3,7 @@
 A standalone marketing / explainer page for **GaadiBook**, the vehicle-document
 compliance tracker for small Indian transporters, cab and auto owners.
 
-> **Never miss a renewal again.** — Rs 299/mo
+> **Never miss a renewal again.** — pricing on discovery, subscription basis
 
 This is **not** the application. It's a single, self-contained landing page that
 explains the product to (a) a non-technical SMB owner and (b) an investor
